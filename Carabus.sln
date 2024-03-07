@@ -1,8 +1,40 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carabus.Shield", "Carabus.Shield\Carabus.Shield.csproj", "{B33DFF10-9A47-433E-9212-9E82846F793D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carabus.LowLevel", "Carabus.LowLevel\Carabus.LowLevel.csproj", "{27CA9B42-9CC8-4606-889F-A5AE76FA9C72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Link", "Link", "{8EDB619A-BA46-41EB-ADCC-9F123209A37F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carabus.Link.Master.netFramework", "Carabus.Link.Master.netFramework\Carabus.Link.Master.netFramework.csproj", "{4C7D89BD-1F3C-4AE9-A06F-E73855C8386B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carabus.Link.Slave.netFramework", "Carabus.Link.Slave.netFramework\Carabus.Link.Slave.netFramework.csproj", "{EB8FA2A7-9492-40BF-8633-569DCA852AF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B33DFF10-9A47-433E-9212-9E82846F793D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B33DFF10-9A47-433E-9212-9E82846F793D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B33DFF10-9A47-433E-9212-9E82846F793D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B33DFF10-9A47-433E-9212-9E82846F793D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27CA9B42-9CC8-4606-889F-A5AE76FA9C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27CA9B42-9CC8-4606-889F-A5AE76FA9C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27CA9B42-9CC8-4606-889F-A5AE76FA9C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27CA9B42-9CC8-4606-889F-A5AE76FA9C72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C7D89BD-1F3C-4AE9-A06F-E73855C8386B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C7D89BD-1F3C-4AE9-A06F-E73855C8386B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C7D89BD-1F3C-4AE9-A06F-E73855C8386B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C7D89BD-1F3C-4AE9-A06F-E73855C8386B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB8FA2A7-9492-40BF-8633-569DCA852AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8FA2A7-9492-40BF-8633-569DCA852AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8FA2A7-9492-40BF-8633-569DCA852AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8FA2A7-9492-40BF-8633-569DCA852AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4C7D89BD-1F3C-4AE9-A06F-E73855C8386B} = {8EDB619A-BA46-41EB-ADCC-9F123209A37F}
+		{EB8FA2A7-9492-40BF-8633-569DCA852AF5} = {8EDB619A-BA46-41EB-ADCC-9F123209A37F}
 	EndGlobalSection
 EndGlobal
