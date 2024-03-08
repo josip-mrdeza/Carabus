@@ -13,9 +13,10 @@
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <LangVersion>8</LangVersion>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-        <PlatformTarget>AnyCPU</PlatformTarget>
+        <PlatformTarget>x86</PlatformTarget>
         <DebugSymbols>true</DebugSymbols>
         <DebugType>full</DebugType>
         <Optimize>false</Optimize>
@@ -34,10 +35,17 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+      <Content Include="..\Debug\carabus.memlib.dll">
+        <Link>carabus.memlib.dll</Link>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
       <Content Include="README_Shield.md" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Memory\" />
+      <Compile Include="Memory\Collections\ListAccessorHelper.cs" />
+      <Compile Include="Memory\Collections\ProtectedCollectionBase.cs" />
+      <Compile Include="Memory\InternalMemFunctions.cs" />
+      <Compile Include="Memory\ProtectedBase.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
