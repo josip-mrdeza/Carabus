@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_memlib", "Test_memlib\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{01F74DBC-E5AD-4A0F-B2CF-631760612C7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarabusRemoteTool", "CarabusRemoteTool\CarabusRemoteTool.csproj", "{77CB31A8-008F-4E60-8ACF-52A290EE9227}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,10 @@ Global
 		{01F74DBC-E5AD-4A0F-B2CF-631760612C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01F74DBC-E5AD-4A0F-B2CF-631760612C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01F74DBC-E5AD-4A0F-B2CF-631760612C7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77CB31A8-008F-4E60-8ACF-52A290EE9227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77CB31A8-008F-4E60-8ACF-52A290EE9227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77CB31A8-008F-4E60-8ACF-52A290EE9227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77CB31A8-008F-4E60-8ACF-52A290EE9227}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4C7D89BD-1F3C-4AE9-A06F-E73855C8386B} = {8EDB619A-BA46-41EB-ADCC-9F123209A37F}

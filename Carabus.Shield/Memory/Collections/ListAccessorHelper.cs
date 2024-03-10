@@ -16,7 +16,8 @@ namespace Carabus.Shield.Memory.Collections
                 var dm = new DynamicMethod("get", MethodAttributes.Static | MethodAttributes.Public, CallingConventions.Standard, typeof(T[]), new Type[] { typeof(List<T>) }, typeof(ArrayAccessor<T>), true);
                 var il = dm.GetILGenerator();
                 il.Emit(OpCodes.Ldarg_0); // Load List<T> argument
-                il.Emit(OpCodes.Ldfld, typeof(List<T>).GetField("_items", BindingFlags.NonPublic | BindingFlags.Instance)); // Replace argument by field
+                il.Emit(OpCodes.Ldfld, 
+                        typeof(List<T>).GetField("_items", BindingFlags.NonPublic | BindingFlags.Instance)!); // Replace argument by field
                 il.Emit(OpCodes.Ret); // Return field
                 Getter = (Func<List<T>, T[]>)dm.CreateDelegate(typeof(Func<List<T>, T[]>));
             }

@@ -46,6 +46,7 @@
       <Compile Include="Memory\Collections\ProtectedCollectionBase.cs" />
       <Compile Include="Memory\InternalMemFunctions.cs" />
       <Compile Include="Memory\ProtectedBase.cs" />
+      <Compile Include="Memory\Serializers\ObjectMemoryAccessor.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
